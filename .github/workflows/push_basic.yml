@@ -1,6 +1,10 @@
 name: GitActions - Basic
 run-name: Running ${{ github.event_name }}
-on: [push]
+on:
+  push:
+    branches:
+      - main
+      - develop
 jobs:
   on-push:
     runs-on: ubuntu-latest
