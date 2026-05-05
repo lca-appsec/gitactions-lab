@@ -12,3 +12,4 @@ jobs:
       - name: Comment only 2
         run: | 
           echo "Comment my basic push on ${{ runner.os }}."
+          echo "FIM"
