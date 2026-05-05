@@ -1,0 +1,10 @@
+name: GitActions - Basic
+run-name: Running ${{ github.event_name }}
+on: [push]
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment only
+        run: | 
+          echo "Comment my basic push"
