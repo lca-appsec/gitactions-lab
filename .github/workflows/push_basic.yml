@@ -3,8 +3,10 @@ run-name: Running ${{ github.event_name }}
 on:
   push:
     branches:
-      - main
+      # - main
       - develop
+    branches-ignore:
+      - main
 jobs:
   on-push:
     runs-on: ubuntu-latest
