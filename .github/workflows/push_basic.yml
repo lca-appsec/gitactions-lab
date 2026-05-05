@@ -2,9 +2,9 @@ name: GitActions - Basic
 run-name: Running ${{ github.event_name }}
 on:
   push:
-    branches:
+    #branches:
       # - main
-      - develop
+     # - develop
     branches-ignore:
       - main
 jobs:
