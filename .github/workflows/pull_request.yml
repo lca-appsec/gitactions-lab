@@ -1,0 +1,10 @@
+name: GitActions - Pull Request
+run-name: Running ${{ github.event_name }}
+on: [pull_request]
+jobs:
+  on-push:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Comment only
+        run: | 
+          echo "Comment my basic push on ${{ runner.os }}."
